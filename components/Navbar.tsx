@@ -1,16 +1,18 @@
+import Image from "next/image";
+
 export function Navbar() {
   return (
-    <section className="section">
-      <nav id="navbar-main" className="navbar is-dark is-fixed-top">
-        <div className="navbar-brand">
-          <h1 className="title has-text-light p-4">hi</h1>
+    <nav id="navbar-main" className="navbar is-fixed-top is-dark">
+      <div className="navbar-brand">
+        <h1 className="title has-text-light">
+          {/* <Image src="/images/cube.png" width={50} height={50} alt="Home" /> */}
+        </h1>
+      </div>
+      <div className="navbar-menu">
+        <div className="navbar-end">
+          <div className="navbar-item mr-3">hi</div>
         </div>
-        <div className="navbar-menu">
-          <div className="navbar-end">
-            <div className="navbar-item mr-3">Home</div>
-          </div>
-        </div>
-      </nav>
-    </section>
+      </div>
+    </nav>
   );
 }

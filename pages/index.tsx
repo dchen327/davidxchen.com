@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import "bulma/css/bulma.min.css";
 import { Navbar } from "../components/Navbar";
+import Splash from "../components/Splash";
 
 const Home: NextPage = () => {
   return (
@@ -27,7 +28,10 @@ const Home: NextPage = () => {
         />
       </Head>
 
-      <Navbar />
+      <Navbar>
+        <Splash />
+      </Navbar>
+      <Splash />
     </main>
   );
 };
