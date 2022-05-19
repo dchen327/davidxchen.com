@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -6,7 +7,7 @@ export default function About() {
       <h1 className="title is-2 has-text-centered has-text-light pb-3">
         About Me
       </h1>
-      <div className="container" style={{ width: "70%" }}>
+      <div className="container" style={{ width: "80%" }}>
         <div className="columns has-text-light has-text-centered">
           {/* relative position to make image fill work */}
           <div className="column is-4" style={{ position: "relative" }}>
@@ -17,11 +18,27 @@ export default function About() {
               alt="david.png"
             />
           </div>
-          <div className="column is-8">
-            <p className="content is-size-5 py-4 my-4">
-              {
-                "Hi! I'm a Computer Science and Math lover, and am very interested in AI/ML."
-              }
+          <div className="column is-8 is-size-5 has-text-left">
+            <p className="content pt-4 mt-4">
+              Hi! I'm a Computer Science and Math lover, and am very interested
+              in AI/ML.
+            </p>
+            <p className="content">
+              I like building websites with React, and writing fun programs in
+              Python—feel free to check out some my projects below!
+            </p>
+            <p className="content">
+              Or glance through some of the{" "}
+              <Link
+                href="https://www.notion.so/Reading-List-29598ddba9b840ada60aaaf47e964c15"
+                passHref
+              >
+                books
+              </Link>{" "}
+              I've read beginning in high school.
+            </p>
+            <p className="content">
+              I'm currently a sophomore at Harvey Mudd College in Claremont, CA.
             </p>
           </div>
         </div>
