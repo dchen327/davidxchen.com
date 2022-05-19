@@ -19,7 +19,7 @@ export default function About() {
             />
           </div>
           <div className="column is-8 is-size-5 has-text-left">
-            <p className="content pt-4 mt-4">
+            <p className="content pt-3 mt-3">
               {
                 "Hi! I'm a Computer Science and Math lover, and am very interested in AI/ML."
               }
@@ -43,6 +43,32 @@ export default function About() {
                 "I'm currently a sophomore at Harvey Mudd College in Claremont, CA."
               }
             </p>
+            <div>
+              <a
+                className="button mr-5 is-info"
+                href="https://www.linkedin.com/in/dchen327/"
+              >
+                <span className="icon">
+                  <i className="fab fa-linkedin"></i>
+                </span>
+              </a>
+              <a
+                className="button mr-5 is-black"
+                href="https://github.com/dchen327"
+              >
+                <span className="icon">
+                  <i className="fab fa-github"></i>
+                </span>
+              </a>
+              <a
+                className="button mr-5 is-danger"
+                href="mailto:davidc3287@gmail.com"
+              >
+                <span className="icon">
+                  <i className="fas fa-envelope"></i>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
