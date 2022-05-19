@@ -9,7 +9,14 @@ export default function Splash() {
       }}
     >
       <div className="hero-body">
-        <div className="title has-text-light">David Chen</div>
+        <div className="container">
+          <p className="title has-text-light mb-2" style={{ fontSize: "65px" }}>
+            David Chen
+          </p>
+          <p className="title has-text-light ml-1 has-text-weight-light">
+            Software Engineer
+          </p>
+        </div>
       </div>
     </section>
   );
