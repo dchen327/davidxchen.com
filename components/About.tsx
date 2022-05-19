@@ -20,8 +20,9 @@ export default function About() {
           </div>
           <div className="column is-8 is-size-5 has-text-left">
             <p className="content pt-4 mt-4">
-              Hi! I'm a Computer Science and Math lover, and am very interested
-              in AI/ML.
+              {
+                "Hi! I'm a Computer Science and Math lover, and am very interested in AI/ML."
+              }
             </p>
             <p className="content">
               I like building websites with React, and writing fun programs in
@@ -35,10 +36,12 @@ export default function About() {
               >
                 books
               </Link>{" "}
-              I've read beginning in high school.
+              {"I've read beginning in high school."}
             </p>
             <p className="content">
-              I'm currently a sophomore at Harvey Mudd College in Claremont, CA.
+              {
+                "I'm currently a sophomore at Harvey Mudd College in Claremont, CA."
+              }
             </p>
           </div>
         </div>
