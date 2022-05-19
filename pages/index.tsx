@@ -28,9 +28,7 @@ const Home: NextPage = () => {
         />
       </Head>
 
-      <Navbar>
-        <Splash />
-      </Navbar>
+      <Navbar />
       <Splash />
     </main>
   );
