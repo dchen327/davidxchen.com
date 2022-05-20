@@ -11,7 +11,15 @@ export function Navbar() {
   return (
     <nav id="navbar-main" className="navbar is-fixed-top is-dark is-size-5">
       <div className="navbar-brand">
-        <Image src="/images/cube.png" width={50} height={50} alt="Home" />
+        <Image
+          className="p-1 ml-1"
+          src="/images/cube.png"
+          width={50}
+          height={50}
+          alt="Home"
+          style={{ borderRadius: "50%" }}
+          onClick={() => animateScroll.scrollToTop({ duration: 500 })}
+        />
       </div>
       <div className="navbar-menu">
         <div className="navbar-end">
