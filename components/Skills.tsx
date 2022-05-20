@@ -7,6 +7,20 @@ export default function Skills() {
         Skills and Technologies
       </h1>
       <Divider />
+      <div className="columns is-centered">
+        <div className="content has-text-light is-size-5">
+          <ul>
+            <li>
+              <b>Programming Languages:</b> Fluent in Python; Familiar with
+              HTML/CSS/JS, TypeScript, Swift, Java, C/C++, SQL
+            </li>
+            <li>
+              <b>Technologies:</b> React, React Native, Next.js, Firebase,
+              Flask, Node.js, TensorFlow, Pandas, Selenium, Git, Linux, Latex
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
   );
 }
