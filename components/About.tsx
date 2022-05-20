@@ -8,9 +8,12 @@ export default function About() {
       <h1 className="title is-2 has-text-centered has-text-light">About Me</h1>
       <Divider />
       <div className="container" style={{ width: "80%" }}>
-        <div className="columns is-mobile has-text-light has-text-centered">
+        <div className="columns is-desktop has-text-light has-text-centered">
           {/* relative position to make image fill work */}
-          <div className="column is-4" style={{ position: "relative" }}>
+          <div
+            className="column is-4"
+            style={{ position: "relative", minHeight: "200px" }}
+          >
             <Image
               src="/images/david.jpg"
               layout="fill"
