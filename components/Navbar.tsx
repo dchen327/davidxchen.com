@@ -1,4 +1,11 @@
 import Image from "next/image";
+import { animateScroll, scroller } from "react-scroll";
+
+const scrollConfig = {
+  duration: 500,
+  smooth: true,
+  // offset: -10,
+};
 
 export function Navbar() {
   return (
@@ -8,8 +15,18 @@ export function Navbar() {
       </div>
       <div className="navbar-menu">
         <div className="navbar-end">
-          <a className="navbar-item px-4 mx-1">Home</a>
-          <a className="navbar-item px-4 mx-1">About</a>
+          <a
+            className="navbar-item px-4 mx-1"
+            onClick={() => animateScroll.scrollToTop({ duration: 500 })}
+          >
+            Home
+          </a>
+          <a
+            className="navbar-item px-4 mx-1"
+            onClick={() => scroller.scrollTo("About", scrollConfig)}
+          >
+            About
+          </a>
           <a className="navbar-item px-4 mx-1">Projects</a>
           <a className="navbar-item px-4 mx-1">Skills</a>
           <a
