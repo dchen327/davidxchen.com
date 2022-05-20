@@ -7,6 +7,7 @@ import { Navbar } from "../components/Navbar";
 import Splash from "../components/Splash";
 import About from "../components/About";
 import { Footer } from "../components/Footer";
+import Projects from "../components/Projects";
 
 const Home: NextPage = () => {
   return (
@@ -34,6 +35,7 @@ const Home: NextPage = () => {
       <Navbar />
       <Splash />
       <About />
+      <Projects />
       <Footer />
     </main>
   );

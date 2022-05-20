@@ -18,13 +18,19 @@ export default function Project(props: ProjectProps) {
   return (
     <div className="columns">
       <div className={"column is-" + (props.imgSide ? 8 : 4)}>{left}</div>
+      <div className={"column is-" + (props.imgSide ? 4 : 8)}>{right}</div>
     </div>
   );
 }
 
 function ProjectImage(props: ProjectProps) {
   return (
-    <Image src={`/images/${props.image}`} layout="fill" objectFit="contain" />
+    <Image
+      src={`/images/${props.image}`}
+      layout="fill"
+      objectFit="contain"
+      alt={props.image}
+    />
   );
 }
 
