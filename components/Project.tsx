@@ -9,6 +9,7 @@ interface ProjectProps {
   key: number;
 }
 
+// TODO: fix mobile columns (pictures too small)
 export default function Project(props: ProjectProps) {
   // alternating cards projects view
   const [left, right] = props.imgSide

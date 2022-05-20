@@ -8,7 +8,7 @@ export default function Splash() {
         backgroundSize: "cover",
       }}
     >
-      <div className="hero-body"h>
+      <div className="hero-body">
         <div className="container">
           <p className="title has-text-light mb-2" style={{ fontSize: "65px" }}>
             David Chen
