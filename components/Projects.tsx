@@ -1,4 +1,5 @@
 import Project from "../components/Project";
+import Divider from "./Divider";
 
 const projects: any = {
   Ruzzle: {
@@ -97,9 +98,8 @@ const projectOrder = [
 export default function Projects() {
   return (
     <section className="section has-background-dark">
-      <h1 className="title is-2 has-text-centered has-text-light pb-3">
-        Projects
-      </h1>
+      <h1 className="title is-2 has-text-centered has-text-light">Projects</h1>
+      <Divider />
       {projectOrder.map((projectName, index) => (
         <Project {...projects[projectName]} imgSide={index % 2} key={index} />
       ))}
