@@ -12,8 +12,19 @@ export function Navbar() {
           <a className="navbar-item px-4 mx-1">About</a>
           <a className="navbar-item px-4 mx-1">Projects</a>
           <a className="navbar-item px-4 mx-1">Skills</a>
-          <a className="navbar-item px-4 mx-1">Books</a>
-          <a className="navbar-item px-4 mx-1">Resume</a>
+          <a
+            className="navbar-item px-4 mx-1"
+            href="https://www.notion.so/Reading-List-29598ddba9b840ada60aaaf47e964c15"
+          >
+            Books
+          </a>
+          <a
+            className="navbar-item px-4 mx-1"
+            href="/resume.pdf"
+            target="_blank"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </nav>
