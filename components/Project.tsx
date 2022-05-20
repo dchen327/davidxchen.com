@@ -1,28 +1,39 @@
 import Image from "next/image";
 
 interface ProjectProps {
-  imgSide: boolean;
-}
-
-interface ImageProps {
   image: string;
+  title: string;
+  excerpt: string;
+  url: string;
+  imgSide: boolean;
+  key: number;
 }
 
-export default function Project(props) {
+export default function Project(props: ProjectProps) {
   // alternating cards projects view
   const [left, right] = props.imgSide
-     ? [<ProjectDesc {...props} />, <ProjectImage {...props} />]
-     : [<ProjectImage {...props} />, <ProjectDesc {...props} />];
+    ? [<ProjectDesc {...props} />, <ProjectImage {...props} />]
+    : [<ProjectImage {...props} />, <ProjectDesc {...props} />];
 
-     return ();
+  return (
+    <div className="columns">
+      <div className={"column is-" + (props.imgSide ? 8 : 4)}>{left}</div>
+    </div>
+  );
 }
 
-function ProjectImage(props) {
+function ProjectImage(props: ProjectProps) {
   return (
-    <Image
-      src={`/images/${props.image}`}
-      layout="fill"
-      objectFit="contain"
-    />
-  )
+    <Image src={`/images/${props.image}`} layout="fill" objectFit="contain" />
+  );
+}
+
+function ProjectDesc(props: ProjectProps) {
+  return (
+    <>
+      <h1 className="title is-2 has-text-centered has-text-light pb-3">
+        {props.title}
+      </h1>
+    </>
+  );
 }
