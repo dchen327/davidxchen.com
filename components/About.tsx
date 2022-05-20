@@ -4,7 +4,7 @@ import Divider from "./Divider";
 
 export default function About() {
   return (
-    <section className="section has-background-dark">
+    <section id="About" className="section has-background-dark">
       <h1 className="title is-2 has-text-centered has-text-light">About Me</h1>
       <Divider />
       <div className="container" style={{ width: "80%" }}>
