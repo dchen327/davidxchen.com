@@ -27,11 +27,23 @@ export function Navbar() {
           >
             About
           </a>
-          <a className="navbar-item px-4 mx-1">Projects</a>
-          <a className="navbar-item px-4 mx-1">Skills</a>
+          <a
+            className="navbar-item px-4 mx-1"
+            onClick={() => scroller.scrollTo("Projects", scrollConfig)}
+          >
+            Projects
+          </a>
+          <a
+            className="navbar-item px-4 mx-1"
+            onClick={() => scroller.scrollTo("Skills", scrollConfig)}
+          >
+            Skills
+          </a>
           <a
             className="navbar-item px-4 mx-1"
             href="https://www.notion.so/Reading-List-29598ddba9b840ada60aaaf47e964c15"
+            target="_blank"
+            rel="noreferrer"
           >
             Books
           </a>

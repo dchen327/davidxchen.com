@@ -23,7 +23,7 @@ export default function Project(props: ProjectProps) {
       ];
 
   return (
-    <div className="columns py-4 my-4">
+    <div className="columns py-4 my-4 mx-2">
       <div
         className={"column mx-2 is-" + (props.imgSide ? 8 : 4)}
         style={{ position: "relative" }}
