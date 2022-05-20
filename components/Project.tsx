@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { createMedia } from "@artsy/fresnel";
 
 interface ProjectProps {
   image: string;
@@ -8,8 +9,49 @@ interface ProjectProps {
   imgSide: boolean;
 }
 
-// TODO: fix mobile columns (pictures too small)
+const AppMedia = createMedia({
+  breakpoints: {
+    mobile: 320,
+    tablet: 768,
+    computer: 992,
+    largeScreen: 1200,
+    widescreen: 1920,
+  },
+});
+
+const mediaStyles = AppMedia.createMediaStyle();
+const { Media, MediaContextProvider } = AppMedia;
+
 export default function Project(props: ProjectProps) {
+  return ();
+}
+
+// desktop: side by side, alternating image and description
+function ProjectDesktop(props: ProjectProps) {
+  // alternating cards projects view
+  const [left, right] = props.imgSide
+    ? [<ProjectDesc {...props} key={1} />, <ProjectImage {...props} key={2} />]
+    : [<ProjectImage {...props} key={1} />, <ProjectDesc {...props} key={2} />];
+
+  return (
+    <div className="columns is-desktop py-4 my-4 mx-2">
+      <div
+        className={"column mx-2 is-" + (props.imgSide ? 8 : 4)}
+        style={{ position: "relative", minHeight: "200px" }}
+      >
+        {left}
+      </div>
+      <div
+        className={"column mx-2 is-" + (props.imgSide ? 4 : 8)}
+        style={{ position: "relative", minHeight: "200px" }}
+      >
+        {right}
+      </div>
+    </div>
+  );
+}
+
+function ProjectMobile(props: ProjectProps) {
   // alternating cards projects view
   const [left, right] = props.imgSide
     ? [<ProjectDesc {...props} key={1} />, <ProjectImage {...props} key={2} />]
