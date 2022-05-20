@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import Divider from "./Divider";
 
 export default function About() {
   return (
     <section className="section has-background-dark">
-      <h1 className="title is-2 has-text-centered has-text-light pb-3">
-        About Me
-      </h1>
+      <h1 className="title is-2 has-text-centered has-text-light">About Me</h1>
+      <Divider />
       <div className="container" style={{ width: "80%" }}>
         <div className="columns has-text-light has-text-centered">
           {/* relative position to make image fill work */}
@@ -43,7 +43,7 @@ export default function About() {
                 "I'm currently a sophomore at Harvey Mudd College in Claremont, CA."
               }
             </p>
-            <div>
+            <div className="mb-6">
               <a
                 className="button mr-5 is-info"
                 href="https://www.linkedin.com/in/dchen327/"
