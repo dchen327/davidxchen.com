@@ -1,6 +1,14 @@
 import Image from "next/image";
 
-export default function Projects(props) {
+interface ProjectProps {
+  imgSide: boolean;
+}
+
+interface ImageProps {
+  image: string;
+}
+
+export default function Project(props) {
   // alternating cards projects view
   const [left, right] = props.imgSide
      ? [<ProjectDesc {...props} />, <ProjectImage {...props} />]
@@ -15,7 +23,6 @@ function ProjectImage(props) {
       src={`/images/${props.image}`}
       layout="fill"
       objectFit="contain"
-      alt="david.png"
     />
   )
 }
