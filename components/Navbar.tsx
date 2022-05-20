@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useState } from "react";
 import { animateScroll, scroller } from "react-scroll";
 
 const scrollConfig = {
@@ -7,6 +8,13 @@ const scrollConfig = {
 };
 
 export function Navbar() {
+  // navbar burger
+  const [active, setActive] = useState(false);
+
+  const handleToggle = () => {
+    setActive(!active);
+  };
+
   return (
     <nav id="navbar-main" className="navbar is-fixed-top is-dark is-size-5">
       <div className="navbar-brand">
@@ -20,20 +28,18 @@ export function Navbar() {
           onClick={() => animateScroll.scrollToTop({ duration: 500 })}
         />
         <a
-          className="navbar-burger"
+          className={`navbar-burger ${active && "is-active"}`}
           role="button"
           aria-label="menu"
           aria-expanded="false"
+          onClick={handleToggle}
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div
-        className="navbar-menu has-text-light is-active"
-        style={{ backgroundColor: "dark" }}
-      >
+      <div className={`navbar-menu has-text-light ${active && "is-active"}`}>
         <div className="navbar-end">
           <a
             className="navbar-item px-4 mx-1"
