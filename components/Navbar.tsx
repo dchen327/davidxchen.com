@@ -39,7 +39,10 @@ export function Navbar() {
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div className={`navbar-menu has-text-light ${active && "is-active"}`}>
+      <div
+        className={`navbar-menu has-text-light ${active && "is-active"}`}
+        onClick={() => setActive(false)}
+      >
         <div className="navbar-end">
           <a
             className="navbar-item px-4 mx-1"

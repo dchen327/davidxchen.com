@@ -32,7 +32,6 @@ const Home: NextPage = () => {
           content="https://raw.githubusercontent.com/dchen327/dchen327.github.io/master/public/images/Tropical-sunset.png"
         />
       </Head>
-
       <Navbar />
       <Splash />
       <About />
