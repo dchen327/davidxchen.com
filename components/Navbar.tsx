@@ -4,7 +4,6 @@ import { animateScroll, scroller } from "react-scroll";
 const scrollConfig = {
   duration: 500,
   smooth: true,
-  // offset: -10,
 };
 
 export function Navbar() {
@@ -20,6 +19,16 @@ export function Navbar() {
           style={{ borderRadius: "50%" }}
           onClick={() => animateScroll.scrollToTop({ duration: 500 })}
         />
+        <a
+          className="navbar-burger"
+          role="button"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
       <div className="navbar-menu">
         <div className="navbar-end">
