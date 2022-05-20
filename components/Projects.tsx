@@ -1,6 +1,6 @@
 import Project from "../components/Project";
 
-const projects = {
+const projects: any = {
   Ruzzle: {
     title: "Ruzzle Solver",
     image: "ruzzle-solver.png",

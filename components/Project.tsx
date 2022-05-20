@@ -12,13 +12,29 @@ interface ProjectProps {
 export default function Project(props: ProjectProps) {
   // alternating cards projects view
   const [left, right] = props.imgSide
-    ? [<ProjectDesc {...props} />, <ProjectImage {...props} />]
-    : [<ProjectImage {...props} />, <ProjectDesc {...props} />];
+    ? [
+        <ProjectDesc {...props} key={props.key} />,
+        <ProjectImage {...props} key={props.key} />,
+      ]
+    : [
+        <ProjectImage {...props} key={props.key} />,
+        <ProjectDesc {...props} key={props.key} />,
+      ];
 
   return (
     <div className="columns">
-      <div className={"column is-" + (props.imgSide ? 8 : 4)}>{left}</div>
-      <div className={"column is-" + (props.imgSide ? 4 : 8)}>{right}</div>
+      <div
+        className={"column is-" + (props.imgSide ? 4 : 8)}
+        style={{ position: "relative" }}
+      >
+        {left}
+      </div>
+      <div
+        className={"column is-" + (props.imgSide ? 8 : 4)}
+        style={{ position: "relative" }}
+      >
+        {right}
+      </div>
     </div>
   );
 }
