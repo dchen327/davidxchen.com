@@ -30,7 +30,10 @@ export function Navbar() {
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div className="navbar-menu">
+      <div
+        className="navbar-menu has-text-light is-active"
+        style={{ backgroundColor: "dark" }}
+      >
         <div className="navbar-end">
           <a
             className="navbar-item px-4 mx-1"
