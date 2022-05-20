@@ -6,33 +6,26 @@ interface ProjectProps {
   excerpt: string;
   url: string;
   imgSide: boolean;
-  key: number;
 }
 
 // TODO: fix mobile columns (pictures too small)
 export default function Project(props: ProjectProps) {
   // alternating cards projects view
   const [left, right] = props.imgSide
-    ? [
-        <ProjectDesc {...props} key={props.key} />,
-        <ProjectImage {...props} key={props.key} />,
-      ]
-    : [
-        <ProjectImage {...props} key={props.key} />,
-        <ProjectDesc {...props} key={props.key} />,
-      ];
+    ? [<ProjectDesc {...props} key={1} />, <ProjectImage {...props} key={2} />]
+    : [<ProjectImage {...props} key={1} />, <ProjectDesc {...props} key={2} />];
 
   return (
-    <div className="columns is-mobile py-4 my-4 mx-2">
+    <div className="columns is-desktop py-4 my-4 mx-2">
       <div
         className={"column mx-2 is-" + (props.imgSide ? 8 : 4)}
-        style={{ position: "relative" }}
+        style={{ position: "relative", minHeight: "200px" }}
       >
         {left}
       </div>
       <div
         className={"column mx-2 is-" + (props.imgSide ? 4 : 8)}
-        style={{ position: "relative" }}
+        style={{ position: "relative", minHeight: "200px" }}
       >
         {right}
       </div>
