@@ -7,6 +7,7 @@ interface ProjectProps {
   excerpt: string;
   url: string;
   imgSide: boolean;
+  mobile?: boolean;
 }
 
 const AppMedia = createMedia({
@@ -23,7 +24,16 @@ const mediaStyles = AppMedia.createMediaStyle();
 const { Media, MediaContextProvider } = AppMedia;
 
 export default function Project(props: ProjectProps) {
-  return ();
+  return (
+    <MediaContextProvider>
+      <Media at="mobile">
+        <ProjectMobile {...props} />
+      </Media>
+      <Media greaterThan="mobile">
+        <ProjectDesktop {...props} />
+      </Media>
+    </MediaContextProvider>
+  );
 }
 
 // desktop: side by side, alternating image and description
@@ -52,24 +62,17 @@ function ProjectDesktop(props: ProjectProps) {
 }
 
 function ProjectMobile(props: ProjectProps) {
-  // alternating cards projects view
-  const [left, right] = props.imgSide
-    ? [<ProjectDesc {...props} key={1} />, <ProjectImage {...props} key={2} />]
-    : [<ProjectImage {...props} key={1} />, <ProjectDesc {...props} key={2} />];
-
+  // description, then image under
   return (
-    <div className="columns is-desktop py-4 my-4 mx-2">
+    <div className="columns">
       <div
-        className={"column mx-2 is-" + (props.imgSide ? 8 : 4)}
+        className="column"
         style={{ position: "relative", minHeight: "200px" }}
       >
-        {left}
+        <ProjectImage {...props} />
       </div>
-      <div
-        className={"column mx-2 is-" + (props.imgSide ? 4 : 8)}
-        style={{ position: "relative", minHeight: "200px" }}
-      >
-        {right}
+      <div className="column">
+        <ProjectDesc {...props} mobile={true} />
       </div>
     </div>
   );
@@ -91,17 +94,27 @@ function ProjectDesc(props: ProjectProps) {
     <div
       className="p-4"
       style={{
-        marginTop: "5rem",
+        marginTop: props.mobile ? "1rem" : "5rem",
         marginBottom: "5rem",
         border: "2px solid",
         borderRadius: "10px",
         boxShadow: "",
       }}
     >
-      <h1 className="title is-4 has-text-light has-text-weight-medium pb-3">
+      <h1
+        className={
+          "title has-text-light has-text-weight-medium is-" +
+          (props.mobile ? 5 : 3)
+        }
+      >
         {props.title}
       </h1>
-      <h2 className="title is-5 has-text-light has-text-weight-light">
+      <h2
+        className={
+          "title has-text-light has-text-weight-light is-" +
+          (props.mobile ? 6 : 5)
+        }
+      >
         {props.excerpt}
       </h2>
       <a
