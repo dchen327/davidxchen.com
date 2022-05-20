@@ -97,8 +97,8 @@ const projectOrder = [
 
 export default function Projects() {
   return (
-    <section id="Projects" className="section has-background-dark">
-      <h1 className="title is-2 has-text-centered has-text-light">Projects</h1>
+    <section id="Projects" className="section">
+      <h1 className="title is-2 has-text-centered">Projects</h1>
       <Divider />
       {projectOrder.map((projectName, index) => (
         <Project {...projects[projectName]} imgSide={index % 2} key={index} />

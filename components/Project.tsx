@@ -102,18 +102,12 @@ function ProjectDesc(props: ProjectProps) {
       }}
     >
       <h1
-        className={
-          "title has-text-light has-text-weight-medium is-" +
-          (props.mobile ? 5 : 3)
-        }
+        className={"title has-text-weight-medium is-" + (props.mobile ? 5 : 3)}
       >
         {props.title}
       </h1>
       <h2
-        className={
-          "title has-text-light has-text-weight-light is-" +
-          (props.mobile ? 6 : 5)
-        }
+        className={"title has-text-weight-normal is-" + (props.mobile ? 6 : 5)}
       >
         {props.excerpt}
       </h2>
