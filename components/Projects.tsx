@@ -97,7 +97,11 @@ const projectOrder = [
 
 export default function Projects() {
   return (
-    <section id="Projects" className="section">
+    <section
+      id="Projects"
+      className="section"
+      style={{ backgroundColor: "#F9F7F5" }}
+    >
       <h1 className="title is-2 has-text-centered">Projects</h1>
       <Divider />
       {projectOrder.map((projectName, index) => (
