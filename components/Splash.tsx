@@ -1,3 +1,5 @@
+import Typist from "react-typist";
+
 export default function Splash() {
   return (
     <section
@@ -14,7 +16,10 @@ export default function Splash() {
             David Chen
           </p>
           <p className="title has-text-light ml-1 has-text-weight-light">
-            Software Engineer
+            <Typist>
+              <Typist.Delay ms={300} />
+              Software Engineer
+            </Typist>
           </p>
         </div>
       </div>
