@@ -1,5 +1,4 @@
 import { Fade } from "react-awesome-reveal";
-import Typist from "react-typist";
 import TypistLoop from "./TypistLoop";
 
 export default function Splash() {
