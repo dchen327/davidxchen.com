@@ -7,9 +7,9 @@ export default function Skills() {
     <section id="Skills" className="section has-background-link-light">
       <Heading text="Skills and Technologies" />
       <Divider />
-      <Fade cascade>
-        <div className="columns is-centered">
-          <div className="content is-size-5">
+      <div className="columns is-centered">
+        <div className="content is-size-5">
+          <Fade cascade delay={300}>
             <ul>
               <li>
                 <b>Programming Languages:</b> Fluent in Python; Familiar with
@@ -20,9 +20,9 @@ export default function Skills() {
                 Flask, Node.js, TensorFlow, Pandas, Selenium, Git, Linux, Latex
               </li>
             </ul>
-          </div>
+          </Fade>
         </div>
-      </Fade>
+      </div>
     </section>
   );
 }
