@@ -13,7 +13,7 @@ export default function TypistLoop({ words }: { words: string[] }) {
         }}
       >
         {word}
-        <Typist.Backspace count={word.length} delay={word.length * 80} />
+        <Typist.Backspace count={word.length} delay={word.length * 50 + 300} />
       </Typist>
     );
   };
