@@ -1,6 +1,16 @@
 import Typist from "react-typist";
+import TypistLoop from "./TypistLoop";
 
 export default function Splash() {
+  const subtitleWords = [
+    "Software Engineering",
+    "Math",
+    "Web Development",
+    "Artificial Intelligence",
+    "Automation",
+    "Statistics",
+  ];
+
   return (
     <section
       className="hero is-fullheight-with-navbar"
@@ -16,10 +26,7 @@ export default function Splash() {
             David Chen
           </p>
           <p className="title has-text-light ml-1 has-text-weight-light">
-            <Typist>
-              <Typist.Delay ms={300} />
-              Software Engineer
-            </Typist>
+            <TypistLoop words={subtitleWords} />
           </p>
         </div>
       </div>
