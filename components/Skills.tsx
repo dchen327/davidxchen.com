@@ -1,9 +1,10 @@
 import Divider from "./Divider";
+import Heading from "./Heading";
 
 export default function Skills() {
   return (
     <section id="Skills" className="section has-background-link-light">
-      <h1 className="title is-2 has-text-centered">Skills and Technologies</h1>
+      <Heading text="Skills and Technologies" />
       <Divider />
       <div className="columns is-centered">
         <div className="content is-size-5">
