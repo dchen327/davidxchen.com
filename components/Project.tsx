@@ -115,6 +115,7 @@ function ProjectDesc(props: ProjectProps) {
         href={props.url}
         target="_blank"
         rel="noreferrer"
+        style={{ borderRadius: "10px" }}
       >
         Source Code
       </a>
