@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Divider from "./Divider";
+import { Fade } from "react-awesome-reveal";
+import Heading from "./Heading";
 
 export default function About() {
   return (
@@ -9,7 +11,7 @@ export default function About() {
       className="section has-text-light"
       style={{ backgroundColor: "#25274D" }}
     >
-      <h1 className="title is-2 has-text-centered has-text-light">About Me</h1>
+      <Heading text="About Me" />
       <Divider />
       <div className="container" style={{ width: "80%" }}>
         <div className="columns is-desktop has-text-centered">
