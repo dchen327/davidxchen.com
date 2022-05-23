@@ -1,5 +1,6 @@
 import Project from "../components/Project";
 import Divider from "./Divider";
+import Heading from "./Heading";
 
 const projects: any = {
   Ruzzle: {
@@ -102,7 +103,7 @@ export default function Projects() {
       className="section"
       style={{ backgroundColor: "#F9F7F5 " }}
     >
-      <h1 className="title is-2 has-text-centered">Projects</h1>
+      <Heading text="Projects" />
       <Divider />
       {projectOrder.map((projectName, index) => (
         <Project {...projects[projectName]} imgSide={index % 2} key={index} />

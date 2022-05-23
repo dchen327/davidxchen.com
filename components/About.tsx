@@ -11,7 +11,7 @@ export default function About() {
       className="section has-text-light"
       style={{ backgroundColor: "#25274D" }}
     >
-      <Heading text="About Me" />
+      <Heading text="About Me" isLight={true} />
       <Divider />
       <div className="container" style={{ width: "80%" }}>
         <div className="columns is-desktop has-text-centered">
