@@ -81,12 +81,14 @@ function ProjectMobile(props: ProjectProps) {
 
 function ProjectImage(props: ProjectProps) {
   return (
-    <Image
-      src={`/images/${props.image}`}
-      layout="fill"
-      objectFit="contain"
-      alt={props.image}
-    />
+    <Fade triggerOnce={true} delay={750} fraction={1}>
+      <Image
+        src={`/images/${props.image}`}
+        layout="fill"
+        objectFit="contain"
+        alt={props.image}
+      />
+    </Fade>
   );
 }
 
