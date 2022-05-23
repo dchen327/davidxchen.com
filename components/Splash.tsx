@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import Typist from "react-typist";
 import TypistLoop from "./TypistLoop";
 
@@ -24,12 +25,17 @@ export default function Splash() {
     >
       <div className="hero-body">
         <div className="container">
-          <p className="title has-text-light mb-2" style={{ fontSize: "65px" }}>
-            David Chen
-          </p>
-          <p className="title has-text-light ml-1 has-text-weight-light">
+          <Fade>
+            <h1
+              className="title has-text-light mb-2"
+              style={{ fontSize: "65px" }}
+            >
+              David Chen
+            </h1>
+          </Fade>
+          <h2 className="title has-text-light ml-1 has-text-weight-light">
             <TypistLoop words={subtitleWords} />
-          </p>
+          </h2>
         </div>
       </div>
     </section>
