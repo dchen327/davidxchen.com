@@ -4,11 +4,13 @@ import TypistLoop from "./TypistLoop";
 export default function Splash() {
   const subtitleWords = [
     "Software Engineering",
-    "Math",
+    "Mathematics",
     "Web Development",
     "Artificial Intelligence",
     "Automation",
     "Statistics",
+    "Robotics",
+    "Product Management",
   ];
 
   return (
