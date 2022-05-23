@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { createMedia } from "@artsy/fresnel";
+import { Slide, Fade } from "react-awesome-reveal";
 
 interface ProjectProps {
   image: string;
@@ -91,34 +92,40 @@ function ProjectImage(props: ProjectProps) {
 
 function ProjectDesc(props: ProjectProps) {
   return (
-    <div
-      className="p-4"
-      style={{
-        marginTop: props.mobile ? "1rem" : "5rem",
-        marginBottom: "5rem",
-        border: "0.5px solid",
-        borderRadius: "10px",
-      }}
-    >
-      <h1
-        className={"title has-text-weight-medium is-" + (props.mobile ? 5 : 3)}
+    <Slide direction={props.imgSide ? "left" : "right"}>
+      <div
+        className="p-4"
+        style={{
+          marginTop: props.mobile ? "1rem" : "5rem",
+          marginBottom: "5rem",
+          border: "0.5px solid",
+          borderRadius: "10px",
+        }}
       >
-        {props.title}
-      </h1>
-      <h2
-        className={"title has-text-weight-normal is-" + (props.mobile ? 6 : 5)}
-      >
-        {props.excerpt}
-      </h2>
-      <a
-        className="button is-success"
-        href={props.url}
-        target="_blank"
-        rel="noreferrer"
-        style={{ borderRadius: "10px" }}
-      >
-        Source Code
-      </a>
-    </div>
+        <h1
+          className={
+            "title has-text-weight-medium is-" + (props.mobile ? 5 : 3)
+          }
+        >
+          {props.title}
+        </h1>
+        <h2
+          className={
+            "title has-text-weight-normal is-" + (props.mobile ? 6 : 5)
+          }
+        >
+          {props.excerpt}
+        </h2>
+        <a
+          className="button is-success"
+          href={props.url}
+          target="_blank"
+          rel="noreferrer"
+          style={{ borderRadius: "10px" }}
+        >
+          Source Code
+        </a>
+      </div>
+    </Slide>
   );
 }
