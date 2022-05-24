@@ -80,9 +80,17 @@ const projects: any = {
       "Trained LSTMs and GRUs on 400,000 Reddit usernames for text generation, then integrated into React through TensorFlow.js and Flask and deployed on Heroku.",
     url: "https://github.com/dchen327/reddit-username-generator",
   },
+  Backgammon: {
+    image: "backgammon.png",
+    title: "Backgammon Dashboard",
+    excerpt:
+      "Developed website for rapid iteration regression testing to create optimal, memorable backgammon strategies based on game state.",
+    url: "https://github.com/dchen327/backgammon-dashboard",
+  },
 };
 
 const projectOrder = [
+  "Backgammon",
   "pingmote",
   "Ruzzle",
   "RedditUsernameGenerator",
