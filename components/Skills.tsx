@@ -1,5 +1,6 @@
 import { Fade } from "react-awesome-reveal";
 import GitHubCalendar from "react-github-calendar";
+import ReactTooltip from "react-tooltip";
 import Divider from "./Divider";
 import Heading from "./Heading";
 
@@ -28,7 +29,9 @@ export default function Skills() {
         GitHub: @dchen327
       </p>
       <div className="columns is-centered pt-3 pb-5">
-        <GitHubCalendar username="dchen327" />
+        <GitHubCalendar username="dchen327">
+          <ReactTooltip html />
+        </GitHubCalendar>
       </div>
     </section>
   );
