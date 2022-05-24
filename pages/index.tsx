@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <title>David Chen</title>
         <meta
           name="description"
-          content="David ChenPersonal Portfolio Website"
+          content="David Chen Personal Portfolio Website"
         />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="David Chen" />
