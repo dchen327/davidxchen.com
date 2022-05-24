@@ -5,6 +5,7 @@ import { animateScroll, scroller } from "react-scroll";
 const scrollConfig = {
   duration: 500,
   smooth: true,
+  offset: -30,
 };
 
 export function Navbar() {
