@@ -8,7 +8,7 @@ export default function Skills() {
     <section id="Skills" className="section has-background-link-light">
       <Heading text="Skills and Technologies" />
       <Divider />
-      <div className="container">
+      <div className="columns is-centered">
         <div className="content is-size-5">
           <Fade cascade delay={300}>
             <ul>
@@ -23,9 +23,12 @@ export default function Skills() {
             </ul>
           </Fade>
         </div>
-        <div className="content">
-          <GitHubCalendar username="dchen327" />
-        </div>
+      </div>
+      <p className="content is-size-5 has-text-centered pt-3">
+        GitHub: @dchen327
+      </p>
+      <div className="columns is-centered pt-3 pb-5">
+        <GitHubCalendar username="dchen327" />
       </div>
     </section>
   );
