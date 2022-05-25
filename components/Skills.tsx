@@ -26,8 +26,19 @@ export default function Skills() {
         </div>
       </div>
       <p className="content is-size-5 has-text-centered pt-3">
-        GitHub: @dchen327
+        <a
+          className="button mr-4 is-black"
+          href="https://github.com/dchen327"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="icon">
+            <i className="fab fa-github"></i>
+          </span>
+          <span>GitHub: @dchen327</span>
+        </a>
       </p>
+
       <div className="columns is-centered pt-3 pb-5">
         <GitHubCalendar username="dchen327">
           <ReactTooltip html />
