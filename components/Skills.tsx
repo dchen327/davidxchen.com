@@ -9,9 +9,9 @@ export default function Skills() {
     <section id="Skills" className="section has-background-link-light">
       <Heading text="Skills and Technologies" />
       <Divider />
-      <div className="columns is-centered">
-        <div className="content is-size-5">
-          <Fade cascade delay={300}>
+      <Fade cascade delay={300} childClassName="my-4">
+        <div className="columns is-centered">
+          <div className="content is-size-5">
             <ul>
               <li>
                 <b>Programming Languages:</b> Fluent in Python; Familiar with
@@ -22,28 +22,28 @@ export default function Skills() {
                 Flask, Node.js, TensorFlow, Pandas, Selenium, Git, Linux, Latex
               </li>
             </ul>
-          </Fade>
+          </div>
         </div>
-      </div>
-      <p className="content is-size-5 has-text-centered pt-3">
-        <a
-          className="button mr-4 is-dark"
-          href="https://github.com/dchen327"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span className="icon">
-            <i className="fab fa-github"></i>
-          </span>
-          <span>GitHub: @dchen327</span>
-        </a>
-      </p>
+        <p className="content is-size-5 has-text-centered pt-3">
+          <a
+            className="button mr-4 is-dark"
+            href="https://github.com/dchen327"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="icon">
+              <i className="fab fa-github"></i>
+            </span>
+            <span>GitHub: @dchen327</span>
+          </a>
+        </p>
 
-      <div className="columns is-centered pt-3 pb-5">
-        <GitHubCalendar username="dchen327">
-          <ReactTooltip html />
-        </GitHubCalendar>
-      </div>
+        <div className="columns is-centered pt-3 pb-5">
+          <GitHubCalendar username="dchen327">
+            <ReactTooltip html />
+          </GitHubCalendar>
+        </div>
+      </Fade>
     </section>
   );
 }
