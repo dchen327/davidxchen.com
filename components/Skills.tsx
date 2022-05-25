@@ -27,7 +27,7 @@ export default function Skills() {
       </div>
       <p className="content is-size-5 has-text-centered pt-3">
         <a
-          className="button mr-4 is-black"
+          className="button mr-4 is-dark"
           href="https://github.com/dchen327"
           target="_blank"
           rel="noreferrer"
