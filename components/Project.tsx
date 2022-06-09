@@ -45,7 +45,7 @@ function ProjectDesktop(props: ProjectProps) {
     : [<ProjectImage {...props} key={1} />, <ProjectDesc {...props} key={2} />];
 
   return (
-    <div className="columns is-desktop py-4 my-4 mx-2">
+    <div className="columns py-4 my-4 mx-2">
       <div
         className={"column mx-2 is-" + (props.imgSide ? 8 : 4)}
         style={{ position: "relative", minHeight: "200px" }}
