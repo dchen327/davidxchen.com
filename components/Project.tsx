@@ -81,12 +81,7 @@ function ProjectMobile(props: ProjectProps) {
 
 function ProjectImage(props: ProjectProps) {
   return (
-    <Fade
-      triggerOnce={true}
-      delay={750}
-      fraction={1}
-      style={{ position: "relative" }}
-    >
+    <Fade triggerOnce={true} delay={750} fraction={1}>
       <Image
         src={`/images/${props.image}`}
         layout="fill"

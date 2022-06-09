@@ -14,10 +14,10 @@ export default function About() {
       <Heading text="About Me" isLight={true} />
       <Divider />
       <div className="container" style={{ width: "80%" }}>
-        <div className="columns is-desktop has-text-centered">
+        <div className="columns has-text-centered">
           {/* relative position to make image fill work */}
           <div
-            className="column is-4"
+            className="column is-4 m-2"
             style={{
               position: "relative",
               minHeight: "200px",
