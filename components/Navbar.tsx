@@ -59,6 +59,12 @@ export function Navbar() {
           </a>
           <a
             className="navbar-item px-4 mx-1"
+            onClick={() => scroller.scrollTo("Experience", scrollConfig)}
+          >
+            Experience
+          </a>
+          <a
+            className="navbar-item px-4 mx-1"
             onClick={() => scroller.scrollTo("Projects", scrollConfig)}
           >
             Projects
