@@ -60,6 +60,8 @@ export default function About() {
                 <a
                   className="button mr-5 is-info"
                   href="https://www.linkedin.com/in/dchen327/"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <span className="icon">
                     <i className="fab fa-linkedin"></i>
@@ -68,6 +70,8 @@ export default function About() {
                 <a
                   className="button mr-5 is-black"
                   href="https://github.com/dchen327"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <span className="icon">
                     <i className="fab fa-github"></i>
