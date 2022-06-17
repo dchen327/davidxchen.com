@@ -6,7 +6,8 @@ interface ProjectProps {
   image: string;
   title: string;
   excerpt: string;
-  url: string;
+  sourceCode?: string;
+  demo?: string;
   imgSide: boolean;
   mobile?: boolean;
 }
@@ -118,15 +119,28 @@ function ProjectDesc(props: ProjectProps) {
         >
           {props.excerpt}
         </h2>
-        <a
-          className="button is-success"
-          href={props.url}
-          target="_blank"
-          rel="noreferrer"
-          style={{ borderRadius: "10px" }}
-        >
-          Source Code
-        </a>
+        {props.sourceCode && (
+          <a
+            className="button is-success mr-2"
+            href={props.sourceCode}
+            target="_blank"
+            rel="noreferrer"
+            style={{ borderRadius: "10px" }}
+          >
+            Source Code
+          </a>
+        )}
+        {props.demo && (
+          <a
+            className="button is-info"
+            href={props.demo}
+            target="_blank"
+            rel="noreferrer"
+            style={{ borderRadius: "10px" }}
+          >
+            Demo
+          </a>
+        )}
       </div>
     </Slide>
   );
