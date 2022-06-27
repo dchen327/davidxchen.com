@@ -89,6 +89,13 @@ const projects: any = {
       "Developed website for rapid iteration regression testing to create optimal, memorable backgammon strategies based on game state.",
     demo: "https://backgammon-dashboard.herokuapp.com/",
   },
+  EduTools: {
+    image: "edutools.png",
+    title: "EduTools",
+    excerpt:
+      "Winner of HackPHS 2020: With the worsening global pandemic, online learning has severely magnified inequality for students with limited access to technology. EduTools makes traditional online learning accessible without the need for internet access: all you need is a basic phone.",
+    sourceCode: "https://github.com/dchen327/EduTools",
+  },
 };
 
 const projectOrder = [
@@ -99,6 +106,7 @@ const projectOrder = [
   "Isola",
   "Arduino",
   "CartPole",
+  "EduTools",
   "SunriseAlarm",
   "Codenames",
   "Ambient",
