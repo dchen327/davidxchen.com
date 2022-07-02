@@ -96,6 +96,13 @@ const projects: any = {
       "Winner of HackPHS 2020: With the worsening global pandemic, online learning has severely magnified inequality for students with limited access to technology. EduTools makes traditional online learning accessible without the need for internet access: all you need is a basic phone.",
     sourceCode: "https://github.com/dchen327/EduTools",
   },
+  AutoLogin: {
+    image: "autologin.png",
+    title: "AutoLogin",
+    excerpt:
+      "A Chrome extension for automatically signing into websites with saved passwords -- saves time clicking and waiting for login buttons, especially on websites with multi-step logins.",
+    sourceCode: "https://github.com/dchen327/AutoLogin",
+  },
 };
 
 const projectOrder = [
@@ -105,6 +112,7 @@ const projectOrder = [
   "RedditUsernameGenerator",
   "Isola",
   "Arduino",
+  "AutoLogin",
   "CartPole",
   "EduTools",
   "SunriseAlarm",
