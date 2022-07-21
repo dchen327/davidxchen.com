@@ -47,7 +47,13 @@ export default function About() {
                   href="https://www.notion.so/Reading-List-29598ddba9b840ada60aaaf47e964c15"
                   passHref
                 >
-                  <a style={{ color: "#05c880" }}>books</a>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ color: "#05c880" }}
+                  >
+                    books
+                  </a>
                 </Link>{" "}
                 {"I've read beginning in high school."}
               </p>
