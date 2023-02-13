@@ -103,9 +103,16 @@ const projects: any = {
       "A Chrome extension for automatically signing into websites with saved passwords -- saves time clicking and waiting for login buttons, especially on websites with multi-step logins.",
     sourceCode: "https://github.com/dchen327/AutoLogin",
   },
+  CitadelDataOpen: {
+    image: "data-open-logo.jpg",
+    title: "Citadel Data Open",
+    excerpt:
+      "Winner of 2022 Citadel Data Open Championship ($100,000 prize): regresison on college data to identify important features predicting pay and loan amounts.",
+  },
 };
 
 const projectOrder = [
+  "CitadelDataOpen",
   "Backgammon",
   "pingmote",
   "Ruzzle",
