@@ -109,10 +109,17 @@ const projects: any = {
     excerpt:
       "Winner of 2022 Citadel Data Open Championship ($100,000 prize): regresison on college data to identify important features predicting pay and loan amounts.",
   },
+  Wordscapes: {
+    image: "wordscapes.png",
+    title: "Wordscapes++",
+    excerpt:
+      "Progressive web app clone of Wordscapes, a popular word finding game -- additional features and higher difficulty.",
+  },
 };
 
 const projectOrder = [
   "CitadelDataOpen",
+  "Wordscapes",
   "Backgammon",
   "pingmote",
   "Ruzzle",
