@@ -107,7 +107,7 @@ const projects: any = {
     image: "data-open-logo.jpg",
     title: "Citadel Data Open",
     excerpt:
-      "Winner of 2022 Citadel Data Open Championship ($100,000 prize): regresison on college data to identify important features predicting pay and loan amounts.",
+      "Winner of 2022 Citadel Data Open Championship ($100,000 prize): regression on college data to identify important features predicting pay and loan amounts.",
   },
   Wordscapes: {
     image: "wordscapes.png",

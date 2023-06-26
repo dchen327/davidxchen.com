@@ -59,7 +59,7 @@ export default function About() {
               </p>
               <p>
                 {
-                  "I'm currently a sophomore at Harvey Mudd College in Claremont, CA."
+                  "I'm currently a junior at Harvey Mudd College in Claremont, CA."
                 }
               </p>
               <div className="mb-6">

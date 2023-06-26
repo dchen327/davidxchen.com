@@ -77,7 +77,7 @@ export function Navbar() {
           </a>
           <a
             className="navbar-item px-4 mx-1"
-            href="https://www.notion.so/Reading-List-29598ddba9b840ada60aaaf47e964c15"
+            href="https://davidxchen.notion.site/Reading-List-29598ddba9b840ada60aaaf47e964c15?pvs=4"
             target="_blank"
             rel="noreferrer"
           >
