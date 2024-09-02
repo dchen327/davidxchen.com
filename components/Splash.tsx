@@ -6,11 +6,10 @@ export default function Splash() {
     "Software Engineering",
     "Mathematics",
     "Web Development",
+    "Databases",
     "Artificial Intelligence",
     "Automation",
-    "Statistics",
-    "Robotics",
-    "Product Management",
+    "Data Science",
   ];
 
   return (

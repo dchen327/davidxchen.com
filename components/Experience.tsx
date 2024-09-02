@@ -18,7 +18,7 @@ export default function Experience() {
           style={{ borderRadius: "20px 20px 0px 0px" }}
         >
           <div
-            className="column mx-3 my-3 is-one-third"
+            className="column mx-3 my-3rev"
             style={{ position: "relative", minHeight: "150px" }}
           >
             <Fade>
@@ -31,7 +31,7 @@ export default function Experience() {
             </Fade>
           </div>
           <div
-            className="column mx-3 my-3 is-one-third"
+            className="column mx-3 my-3rev"
             style={{ position: "relative", minHeight: "150px" }}
           >
             <Fade delay={200}>
@@ -44,15 +44,15 @@ export default function Experience() {
             </Fade>
           </div>
           <div
-            className="column mx-3 my-3 is-one-third"
+            className="column mx-3 my-3rev"
             style={{ position: "relative", minHeight: "150px" }}
           >
             <Fade delay={400}>
               <Image
-                src="/images/cssi.jpg"
+                src="/images/revscale.svg"
                 layout="fill"
                 objectFit="contain"
-                alt="cssi.jpg"
+                alt="revscale.svg"
               />
             </Fade>
           </div>
@@ -62,23 +62,10 @@ export default function Experience() {
           style={{ borderRadius: "0px 0px 20px 20px" }}
         >
           <div
-            className="column mx-3 my-3 is-one-third"
+            className="column mx-3 my-3"
             style={{ position: "relative", minHeight: "150px" }}
           >
             <Fade delay={600}>
-              <Image
-                src="/images/hireflow.png"
-                layout="fill"
-                objectFit="contain"
-                alt="hireflow.png"
-              />
-            </Fade>
-          </div>
-          <div
-            className="column mx-3 my-3 is-one-third"
-            style={{ position: "relative", minHeight: "150px" }}
-          >
-            <Fade delay={800}>
               <Image
                 src="/images/google.png"
                 layout="fill"
@@ -88,7 +75,7 @@ export default function Experience() {
             </Fade>
           </div>
           <div
-            className="column mx-3 my-3 is-one-third"
+            className="column mx-3 my-3"
             style={{ position: "relative", minHeight: "150px" }}
           >
             <Fade delay={800}>
@@ -97,6 +84,19 @@ export default function Experience() {
                 layout="fill"
                 objectFit="contain"
                 alt="stripe.png"
+              />
+            </Fade>
+          </div>
+          <div
+            className="column mx-3 my-3"
+            style={{ position: "relative", minHeight: "150px" }}
+          >
+            <Fade delay={1000}>
+              <Image
+                src="/images/databricks.png"
+                layout="fill"
+                objectFit="contain"
+                alt="databricks.png"
               />
             </Fade>
           </div>

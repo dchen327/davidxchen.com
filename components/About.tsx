@@ -34,7 +34,7 @@ export default function About() {
             <Fade cascade triggerOnce childClassName="content pt-3 mt-3">
               <p>
                 {
-                  "Hi! I'm a Computer Science and Math lover, and am very interested in AI/ML."
+                  "Hi! I'm a computer science and math lover, and love automation and learning about how things work :)"
                 }
               </p>
               <p>
@@ -59,7 +59,7 @@ export default function About() {
               </p>
               <p>
                 {
-                  "I'm currently a junior at Harvey Mudd College in Claremont, CA."
+                  "I'm currently a CS/Math senior at Harvey Mudd College in Claremont, CA."
                 }
               </p>
               <div className="mb-6">
