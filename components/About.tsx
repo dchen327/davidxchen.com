@@ -44,7 +44,7 @@ export default function About() {
               <p>
                 Or glance through some of the{" "}
                 <Link
-                  href="https://www.notion.so/Reading-List-29598ddba9b840ada60aaaf47e964c15"
+                  href="https://www.goodreads.com/user/show/102476193-david"
                   passHref
                 >
                   <a
@@ -59,7 +59,7 @@ export default function About() {
               </p>
               <p>
                 {
-                  "I'm currently a CS/Math senior at Harvey Mudd College in Claremont, CA."
+                  "I'm currently a software engineer at Databricks in SF working on the Database Infrastructure team, and graduated from Harvey Mudd College in 2025."
                 }
               </p>
               <div className="mb-6">

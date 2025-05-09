@@ -14,10 +14,13 @@ export default function Skills() {
           <div className="content is-size-5">
             <ul>
               <li>
-                <b>Programming Languages:</b> Fluent in Python, TypeScript, JavaScript; Familiar with Java, Scala, C, C++, Ruby, Swift, SQL, Haskell
+                <b>Programming Languages:</b> Fluent in Python, TypeScript,
+                JavaScript; Familiar with Java, Scala, C, C++, Ruby, Swift, SQL,
+                Haskell
               </li>
               <li>
-                <b>Technologies:</b> React, Next.js, MySQL, MongoDB, Temporal, Firebase, Jest, Bazel, Dagger, Flask, Node.js, TensorFlow, Pandas, Azure
+                <b>Technologies:</b> MySQL, React, Next.js, MongoDB, Temporal,
+                Firebase, Bazel, Dagger, Flask, Node.js, Pandas, Azure, GCP, AWS
               </li>
             </ul>
           </div>
