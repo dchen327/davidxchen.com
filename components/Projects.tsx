@@ -115,10 +115,18 @@ const projects: any = {
     excerpt:
       "Progressive web app clone of Wordscapes, a popular word finding game -- additional features and higher difficulty.",
   },
+  "8-Ball Pool Agent": {
+    image: "pool_agent.png",
+    title: "8-Ball Pool Agent",
+    excerpt:
+      "Computer Vision agent for Miniclip 8-Ball Pool: uses OpenCV and PyTorch to detect the table and balls, and calculate the best shot. PyAutoGUI automation actually plays the game on an Android phone projected to a computer screen.",
+    sourceCode: "https://github.com/dchen327/CS153-Pool-Agent",
+  },
 };
 
 const projectOrder = [
   "CitadelDataOpen",
+  "8-Ball Pool Agent",
   "Wordscapes",
   "Backgammon",
   "pingmote",
